@@ -71,7 +71,7 @@ const PacientesLista: React.FC = () => {
                             <IonCol>Acciones</IonCol>
                         </IonRow>
                         {pacientes.map((paciente:any) => 
-                            <IonRow>
+                            <IonRow key={paciente.id}>
                                 <IonCol>{paciente.especie}</IonCol>
                                 <IonCol>{paciente.nombre}</IonCol>
                                 <IonCol>{paciente.edad}</IonCol>
